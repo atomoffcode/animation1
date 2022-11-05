@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(88, 88, 255);
+    animation: sky 10s linear 1;
+}
+.sun{
+    position: absolute;
+    width: 300px;
+    top: 10px;
+    left: 40%;
+    animation: sunn 10s linear 1;
+}
+.cloud{
+    position: absolute;
+    top: 0;
+    right: -500px;
+    animation: cloudd 10s linear 1;
+}
+
+@keyframes sunn{
+    0%{
+        filter: grayscale(0);
+    }
+    10%{
+        filter: grayscale(0);
+    }
+    20%{
+        filter: grayscale(1);
+    }
+    55%{
+        filter: grayscale(1);
+    }
+    60%{
+        filter: grayscale(0);
+    }
+    100%{
+        filter: grayscale(0);
+    }
+
+
+
+}
+@keyframes sky{
+    0%{
+        background-color: rgb(88, 88, 255);
+    }
+    10%{
+        background-color: rgb(88, 88, 255);
+    }
+    20%{
+        background-color: rgb(15, 15, 33);
+    }
+    55%{
+        background-color: rgb(15, 15, 33);
+    }
+    60%{
+        background-color: rgb(88, 88, 255);
+    }
+    100%{
+        background-color: rgb(88, 88, 255);
+    }
+
+
+
+}
+
+@keyframes cloudd{
+    from{
+        top: 0;
+        right: -500px;
+    }
+    to{
+        top: 0;
+        right: 100%;
+    }
+}
